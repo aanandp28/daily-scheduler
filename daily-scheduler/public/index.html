@@ -1,0 +1,41 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Scheduler App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🗓️ Daily Scheduler</h1>
+  
+  <section class="priorities">
+    <h2>Top 3 Priorities</h2>
+    <input placeholder="Priority 1"><br>
+    <input placeholder="Priority 2"><br>
+    <input placeholder="Priority 3">
+  </section>
+
+  <section class="schedule">
+    <h2>Schedule (6 AM - 10 PM)</h2>
+    <div id="schedule-container"></div>
+  </section>
+
+  <section class="email">
+    <h3>Email (Optional for reminders)</h3>
+    <input type="email" placeholder="Enter your email">
+  </section>
+
+  <section class="actions">
+    <button onclick="saveSchedule()">💾 Save</button>
+    <button onclick="loadSchedule()">🔄 Load</button>
+    <button onclick="clearSchedule()">🧹 Clear</button>
+  </section>
+
+  <section class="progress">
+    <h3 id="progress-text">Tasks Completed: 0/17</h3>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
